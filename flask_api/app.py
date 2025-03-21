@@ -18,7 +18,7 @@ def get_db_connection():
         cursorclass=pymysql.cursors.DictCursor
     )
 
-# إنشاء الجداول إذا لم تكن موجودة
+# إنشاء الجداول 
 def init_db():
     conn = get_db_connection()
     cursor = conn.cursor()
