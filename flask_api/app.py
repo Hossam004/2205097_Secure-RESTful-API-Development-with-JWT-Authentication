@@ -12,8 +12,8 @@ app.config['SECRET_KEY'] = 'your_secret_key'
 def get_db_connection():
     return pymysql.connect(
         host="localhost",
-        user="root",  # غيره لو كان عندك مستخدم مختلف
-        password="",  # ضع الباسورد لو عندك
+        user="root",  
+        password="",  
         database="flask_api",
         cursorclass=pymysql.cursors.DictCursor
     )
